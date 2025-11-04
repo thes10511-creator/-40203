@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>個人作品集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .photo img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .pdf-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .pdf-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .pdf-links a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到我的作品集</h1>
+    </header>
+    <div class="container">
+        <!-- 個人照片區域 -->
+        <div class="photo">
+            <img src="myphoto.JPG" alt="個人照片">
+        </div>
+
+        <!-- 作品 PDF 連結 -->
+        <h2>我的 PDF 作品</h2>
+        <div class="pdf-links">
+            <a href="work1.pdf" target="_blank">作品 1</a>
+            <a href="work2.pdf" target="_blank">作品 2</a>
+            <a href="work3.pdf" target="_blank">作品 3</a>
+        </div>
+    </div>
+</body>
+</html>
