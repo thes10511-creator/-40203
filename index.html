@@ -3,72 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>個人作品集</title>
+    <title>個人介紹｜師大應外</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Segoe UI", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #0d0f1b;
+            color: #e4e6eb;
+            overflow-x: hidden;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+                radial-gradient(circle at 20% 30%, rgba(0,140,255,0.15), transparent 70%),
+                radial-gradient(circle at 80% 70%, rgba(255,0,140,0.12), transparent 60%);
+            background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
+
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
+            width: 85%;
+            max-width: 1100px;
+            margin: 60px auto;
         }
-        .photo {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .photo img {
-            width: 200px;
-            height: auto;
-            border-radius: 50%;
-        }
-        .pdf-links {
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(15px);
+            border-radius: 18px;
+            padding: 35px;
             display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
+            align-items: center;
+            gap: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
         }
-        .pdf-links a {
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(0,200,255,0.5);
+            box-shadow: 0 0 25px rgba(0,200,255,0.35);
+        }
+
+        .hello-title {
+            font-size: 34px;
+            margin: 0;
+            background: linear-gradient(90deg, #00eaff, #ff56ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #d6d8dd;
+            margin-top: 10px;
+        }
+
+        .work-section {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .work-title {
+            font-size: 30px;
+            margin-bottom: 35px;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00eaff, #ff56ff);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .btn {
+            padding: 14px 35px;
+            border-radius: 10px;
             text-decoration: none;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 5px;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
+            font-size: 18px;
+            font-weight: 600;
+            border: 2px solid #00eaff;
+            color: #00eaff;
+            transition: 0.25s;
+            box-shadow: 0 0 10px rgba(0,234,255,0.4);
         }
-        .pdf-links a:hover {
-            background-color: #45a049;
+
+        .btn:hover {
+            background-color: #00eaff;
+            color: #0d0f1b;
+            box-shadow: 0 0 25px rgba(0,234,255,0.9);
+            transform: translateY(-3px);
         }
+
+        .work-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .links-section {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .link-box {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.06);
+            padding: 20px;
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        iframe {
+            width: 100%;
+            height: 260px;
+            border-radius: 10px;
+        }
+
+        .ext-link {
+            display: block;
+            margin-top: 12px;
+            color: #00eaff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>歡迎來到我的作品集</h1>
-    </header>
+
     <div class="container">
-        <!-- 個人照片區域 -->
-        <div class="photo">
-            <img src="myphoto.JPG" alt="個人照片">
+
+        <div class="profile-card">
+            <img src="me.jpg" alt="個人照片" class="profile-img">
+
+            <div>
+                <h1 class="hello-title">Hello~</h1>
+                <p class="description" style="margin-bottom:0;"><strong>作者：陳妍蓁</strong><br><strong>科系：師大應外學系</strong></p>
+                <p class="description">
+                    我是陳妍蓁，目前就讀師大應外學系。
+                    我對英文、語言學習與跨文化交流有興趣，希望透過學習英文與其他外語，
+                    培養良好的溝通能力與國際視野，並持續探索語言與科技結合的可能性。
+                </p>
+            </div>
         </div>
 
-        <!-- 作品 PDF 連結 -->
-        <h2>我的 PDF 作品</h2>
-        <div class="pdf-links">
-            <a href="work1.pdf" target="_blank">作品 1</a>
-            <a href="work2.pdf" target="_blank">作品 2</a>
-            <a href="work3.pdf" target="_blank">作品 3</a>
+        <div class="links-section">
+            <div class="link-box">
+                <h3>師大應外相關影片</h3>
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                    <iframe src="https://www.youtube.com/embed?listType=search&list=國立臺灣師範大學應用外語" allowfullscreen style="height:120px;"></iframe>
+                    <iframe src="https://www.youtube.com/embed?listType=search&list=師大應用外語學系" allowfullscreen style="height:120px;"></iframe>
+                    <iframe src="https://www.youtube.com/embed?listType=search&list=國立臺灣師範大學外語" allowfullscreen style="height:120px;"></iframe>
+                    <iframe src="https://www.youtube.com/embed?listType=search&list=師大應外" allowfullscreen style="height:120px;"></iframe>
+                </div>
+                <a class="ext-link" href="https://www.youtube.com/results?search_query=國立臺灣師範大學+應用外語" target="_blank">更多影片：YouTube 搜尋「師大應用外語」</a>
+            </div>
+
+            <div class="link-box">
+                <h3>師大應外相關官方網站</h3>
+                <a class="ext-link" href="https://www.ntnu.edu.tw/" target="_blank">國立臺灣師範大學官方網站</a>
+                <a class="ext-link" href="https://admission.ntnu.edu.tw/" target="_blank">師大招生資訊</a>
+                <a class="ext-link" href="https://www.ntnu.edu.tw/" target="_blank">師大校園資訊</a>
+            </div>
         </div>
+
+        <div class="link-box" style="margin-top:20px;">
+            <h3>師大應外學系相關網站</h3>
+            <a class="ext-link" href="https://www.ntnu.edu.tw/" target="_blank">前往師大官方網站</a>
+        </div>
+
+        <div class="work-section">
+            <h2 class="work-title">我的作品</h2>
+
+            <div class="work-buttons">
+                <a class="btn" href="work1.pdf" target="_blank">作品 1</a>
+                <a class="btn" href="work2.pdf" target="_blank">作品 2</a>
+                <a class="btn" href="work3.pdf" target="_blank">作品 3</a>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
